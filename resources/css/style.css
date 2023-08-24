@@ -2,3 +2,20 @@ html {
     /* 62.5% of 16px browser font size is 10px */
     font-size: 62.5%;
   }
+
+:root {
+  /* document colors */
+  --pure-white: #fff;
+  --cream: #f2eae2;
+  --aurometal-saurus: #6c7289;
+  --deep-aquamarine: #3d8168;
+  --gunmetal: #1c232b;
+
+  /* typography */
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  --display: 3.2rem;
+  --body: 1.4rem;
+  --button-text: 1.4rem;
+  --overline: 1.2rem;
+}
