@@ -12,10 +12,96 @@ html {
   --gunmetal: #1c232b;
 
   /* typography */
-  font-family: 'Fraunces', serif;
-  font-family: 'Montserrat', sans-serif;
+  --font-family-display: 'Fraunces', serif;
+  --font-family-default: 'Montserrat', sans-serif;
+
+  font-family: var(--font-family-default);
+  
   --display: 3.2rem;
-  --body: 1.4rem;
+  --display-line-height: 3.2rem;
+  --body: 1.3rem;
+  --body-line-height: 2.3rem;
   --button-text: 1.4rem;
   --overline: 1.2rem;
+  --overline-letter-spacing: .5rem;
 }
+
+h1 {
+  color: var(--gunmetal);
+  font-size: var(--display);
+  font-family: var(--font-family-display);
+  margin: 0%;
+  ;
+}
+
+h1.discount-price {
+  color: var(--deep-aquamarine);
+  
+}
+
+.og-price {
+  text-decoration: line-through;
+  font-size: 1.3rem;
+  color: var(--aurometal-saurus);
+  line-height: var(--body-line-height);
+  margin-left: 1.9rem;
+  
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  
+}
+
+p {
+  color: var(--aurometal-saurus);
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+
+}
+
+.overline {
+  text-transform: uppercase;
+  font-size: var(--overline);
+  letter-spacing: var(--overline-letter-spacing);
+}
+
+.mobile-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+body { background-color: var(--cream);
+}
+
+button {
+  background-color: var(--deep-aquamarine);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 295px;
+  height: 48px;
+  margin-top: 20px;
+}
+
+.cart-icon {
+  width: auto;
+}
+
+/* For mobile phones: */
+.card-component {
+  background-color: var(--pure-white);
+  border-radius: 10px;
+  width: 343px;
+  display: grid;
+  
+}
+
+.product-info {
+  padding: 0px 20px 20px 20px;
+  
+}
+
+
