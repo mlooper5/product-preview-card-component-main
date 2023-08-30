@@ -9,11 +9,14 @@ html {
   --cream: #f2eae2;
   --aurometal-saurus: #6c7289;
   --deep-aquamarine: #3d8168;
+  --deeper-aquamarine: #1A4032;
   --gunmetal: #1c232b;
 
   /* typography */
   --font-family-display: 'Fraunces', serif;
   --font-family-default: 'Montserrat', sans-serif;
+  
+     
 
   font-family: var(--font-family-default);
   
@@ -35,8 +38,7 @@ h1 {
 }
 
 h1.discount-price {
-  color: var(--deep-aquamarine);
-  
+  color: var(--deep-aquamarine); 
 }
 
 .og-price {
@@ -45,20 +47,18 @@ h1.discount-price {
   color: var(--aurometal-saurus);
   line-height: var(--body-line-height);
   margin-left: 1.9rem;
-  
+ 
 }
 
 .price {
   display: flex;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 p {
   color: var(--aurometal-saurus);
   font-size: var(--body);
   line-height: var(--body-line-height);
-
 }
 
 .overline {
@@ -67,27 +67,41 @@ p {
   letter-spacing: var(--overline-letter-spacing);
 }
 
-.mobile-hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0px 0px;
-}
+
 
 body { background-color: var(--cream);
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 button {
   background-color: var(--deep-aquamarine);
+  font-family: var(--font-family-default);
+  font-weight: 700;
   color: white;
   border: none;
   border-radius: 8px;
-  width: 295px;
+  width: 100%;
   height: 48px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+button:hover {
+  background-color: var(--deeper-aquamarine);
+  cursor: pointer;
+  
 }
 
 .cart-icon {
-  width: auto;
+ width: auto;
+ padding-right: 12px;
 }
 
 /* For mobile phones: */
@@ -95,13 +109,42 @@ button {
   background-color: var(--pure-white);
   border-radius: 10px;
   width: 343px;
-  display: grid;
-  
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .product-info {
   padding: 0px 20px 20px 20px;
   
+  
 }
 
+/* For desktop: */
 
+@media only screen and (min-width: 600px) {
+
+  .card-component {
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+
+  .hero img {
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .product-info {
+    padding: 32px;
+    
+    
+    
+  }
+  
+}
